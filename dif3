@@ -1,0 +1,6 @@
+--- 
++++ 
+@@ -141,2 +141,2 @@
+-#font.family         : sans-serif
++font.family         : IPAexGothic
+ #font.style          : normal
