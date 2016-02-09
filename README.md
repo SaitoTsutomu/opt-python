@@ -19,13 +19,13 @@ jupyter-client|4.1.1|jupyter-console|4.1.0|jupyter-core|4.0.6|jupyter_client|4.1
 jupyter_console|4.1.0|jupyter_core|4.0.6|libgfortran|1.0|libpng|1.6.17
 libsodium|1.0.3|libxml2|2.9.2|llvmlite|0.8.0|locket|0.2.0
 markdown|2.6.5|markupsafe|0.23|matplotlib|1.5.1|mistune|0.7.1
-mkl|11.3.1|more-itertools|2.2|multipledispatch|0.4.8|myopenopt|0.0.1
-mypulp|0.0.8|nbconvert|4.1.0|nbformat|4.0.1|ncurses|5.9
-networkx|1.11|notebook|4.1.0|numba|0.23.1|numexpr|2.4.6
-numpy|1.10.4|odo|0.4.0|openopt|0.5625|openssl|1.0.2f
-pandas|0.17.1|partd|0.3.2|path.py|8.1.2|patsy|0.4.0
-pexpect|3.3|pickleshare|0.5|pip|8.0.2|psutil|3.4.2
-ptyprocess|0.5|pulp|1.6.1|pyaml|15.8.2|pycosat|0.6.1
+more-itertools|2.2|multipledispatch|0.4.8|myopenopt|0.0.1|mypulp|0.0.8
+nbconvert|4.1.0|nbformat|4.0.1|ncurses|5.9|networkx|1.11
+nomkl|1.0|notebook|4.1.0|numba|0.23.1|numexpr|2.4.6
+numpy|1.10.4|odo|0.4.0|openblas|0.2.14|openopt|0.5625
+openssl|1.0.2f|pandas|0.17.1|partd|0.3.2|path.py|8.1.2
+patsy|0.4.0|pexpect|3.3|pickleshare|0.5|pip|8.0.2
+psutil|3.4.2|ptyprocess|0.5|pulp|1.6.1|pycosat|0.6.1
 pycrypto|2.6.1|pygments|2.1|pyjade|4.0.0|pymongo|3.0.3
 pyparsing|2.0.3|pyqt|4.11.4|pytables|3.2.2|python|3.5.1
 python-contrib-nbextensions|alpha|python-dateutil|2.4.2|pytz|2015.7|pyyaml|3.11
@@ -35,5 +35,5 @@ setproctitle|1.1.9|setuptools|19.6.2|simplegeneric|0.8.1|sip|4.16.9
 six|1.10.0|sqlalchemy|1.0.11|sqlite|3.9.2|statsmodels|0.6.1
 sympy|0.7.6.1|tables|3.2.2|terminado|0.5|tk|8.5.18
 toolz|0.7.4|tornado|4.3|traitlets|4.1.0|werkzeug|0.11.3
-wheel|0.26.0|xz|5.0.5|yaml|0.1.6|zeromq|4.1.3
+wheel|0.29.0|xz|5.0.5|yaml|0.1.6|zeromq|4.1.3
 zlib|1.2.8||||||
