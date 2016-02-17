@@ -1,7 +1,8 @@
 FROM tsutomu7/alpine-python
 
 COPY dif1 dif2 dif3 /root/
-RUN apk add --no-cache --virtual=build-dependencies musl-dev gcc wget && \
+RUN apk add --no-cache libstdc++ && \
+    apk add --no-cache --virtual=build-dependencies musl-dev gcc wget && \
     ln -s /usr/include/sys/ /usr/include/linux && cd /root && \
     wget -q --no-check-certificate https://pypi.python.org/packages/source/F/FuncDesigner/FuncDesigner-0.5620.tar.gz && \
     tar zxf FuncDesigner-0.5620.tar.gz && cd FuncDesigner-0.5620/FuncDesigner && \
