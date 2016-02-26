@@ -3,7 +3,7 @@ FROM tsutomu7/scientific-python
 ENV DEBIAN_FRONTEND=noninteractive \
     FNCD=FuncDesigner-0.5620
 COPY dif1 dif2 dif3 /root/
-RUN apt-get update --fix-missing && apt-get install -y gcc patch \
+RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
     apt-get clean && \
     wget -q --no-check-certificate \
         https://pypi.python.org/packages/source/F/FuncDesigner/"$FNCD".tar.gz && \
