@@ -1,4 +1,4 @@
-FROM scientific-python
+FROM tsutomu7/scientific-python
 
 ENV DEBIAN_FRONTEND=noninteractive \
     FNCD=FuncDesigner-0.5620
