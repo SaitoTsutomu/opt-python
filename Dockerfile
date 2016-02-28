@@ -15,5 +15,5 @@ RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
     cd /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data && \
     patch -u matplotlibrc < ~/dif3 && \
     apt-get purge -y gcc patch && apt-get -y autoremove && \
-    rm -rf /var/lib/apt/lists/* /root/* /root/.c* FuncDesigner*
+    rm -rf /var/lib/apt/lists/* /root/* /root/.c* /FuncDesigner*
 CMD ["/bin/bash"]
