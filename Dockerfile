@@ -3,7 +3,8 @@ FROM tsutomu7/scientific-python
 ENV DEBIAN_FRONTEND=noninteractive \
     FNCD=FuncDesigner-0.5620
 COPY dif1 dif2 dif3 /root/
-RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
+RUN apt-get update --fix-missing && \
+    apt-get install -y gcc patch --no-install-recommends && \
     apt-get clean && \
     wget -q --no-check-certificate \
         https://pypi.python.org/packages/source/F/FuncDesigner/"$FNCD".tar.gz && \
@@ -14,6 +15,6 @@ RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
     pip install openopt mypulp myopenopt && \
     cd /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data && \
     patch -u matplotlibrc < ~/dif3 && \
-    apt-get purge -y --auto-remove gcc patch \
+    apt-get purge -y --auto-remove gcc patch && \
     rm -rf /var/lib/apt/lists/* /root/* /root/.c* /FuncDesigner*
 CMD ["/bin/bash"]
