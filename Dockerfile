@@ -11,7 +11,7 @@ RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
     sed -i 's/r = ooPoint((v, x\[S.oovar_indexes\[i]:S.oovar_indexes\[i+1]]) for i, v in enumerate(S._variables), \*\*kw)/r = ooPoint([(v, x[S.oovar_indexes[i]:S.oovar_indexes[i+1]]) for i, v in enumerate(S._variables)], **kw)/' /$FNCD/FuncDesigner/translator.py && \
     sed -i 's/print f(point) /print(f(point)) /' /$FNCD/FuncDesigner/examples/lp2.py && \
     sed -i 's/#font.family         : sans-serif/font.family         : IPAexGothic/' /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/matplotlibrc && \
-    cd $FNCD/FuncDesigner && \
+    cd $FNCD && \
     python setup.py install && \
     pip install openopt mypulp myopenopt && \
     apt-get purge -y --auto-remove gcc patch && \
