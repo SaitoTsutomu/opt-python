@@ -1,6 +1,0 @@
---- 
-+++ 
-@@ -12,2 +12,2 @@
--print f(point) # prints 40899980.
-+print(f(point)) # prints 40899980.
- 

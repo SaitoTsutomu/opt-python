@@ -1,6 +1,0 @@
---- 
-+++ 
-@@ -140,2 +140,2 @@
--    r = ooPoint((v, x[S.oovar_indexes[i]:S.oovar_indexes[i+1]]) for i, v in enumerate(S._variables), **kw)
-+    r = ooPoint([(v, x[S.oovar_indexes[i]:S.oovar_indexes[i+1]]) for i, v in enumerate(S._variables)], **kw)
-     
