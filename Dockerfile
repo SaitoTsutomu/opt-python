@@ -1,7 +1,6 @@
 FROM tsutomu7/scientific-python
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    LANG=ja_JP.UTF-8 \
     FNCD=FuncDesigner-0.5620
 RUN apt-get update --fix-missing && apt-get install -y gcc patch && \
     apt-get clean && \
