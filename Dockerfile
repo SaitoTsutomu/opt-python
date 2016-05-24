@@ -13,6 +13,6 @@ RUN sudo apt-get update --fix-missing && usdo apt-get install -y gcc patch && \
     cd $FNCD && \
     python setup.py install && \
     pip install openopt mypulp myopenopt && \
-    sudo apt-get purge -y --autoremove gcc patch && \
+    sudo apt-get purge -y --auto-remove gcc patch && \
     sudo rm -rf /var/lib/apt/lists/* ~/.cache ~/FuncDesigner*
 CMD ["/bin/bash"]
