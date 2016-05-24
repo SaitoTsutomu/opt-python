@@ -2,7 +2,7 @@ FROM tsutomu7/scientific-python
 
 ENV DEBIAN_FRONTEND=noninteractive \
     FNCD=FuncDesigner-0.5620
-RUN sudo apt-get update --fix-missing && usdo apt-get install -y gcc patch && \
+RUN sudo apt-get update --fix-missing && sudo apt-get install -y gcc patch && \
     sudo apt-get clean && \
     wget -q --no-check-certificate \
         https://pypi.python.org/packages/source/F/FuncDesigner/"$FNCD".tar.gz && \
