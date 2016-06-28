@@ -12,7 +12,7 @@ RUN sudo apt-get update --fix-missing && sudo apt-get install -y gcc patch && \
     sed -i 's/#font.family         : sans-serif/font.family         : IPAexGothic/' /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/matplotlibrc && \
     cd $FNCD && \
     python setup.py install && \
-    pip install openopt mypulp myopenopt && \
+    pip install --no-cache openopt mypulp myopenopt && \
     sudo apt-get purge -y --auto-remove gcc patch && \
-    sudo rm -rf /var/lib/apt/lists/* ~/.cache ~/FuncDesigner*
+    sudo rm -rf /var/lib/apt/lists/* ~/FuncDesigner*
 CMD ["/bin/bash"]
